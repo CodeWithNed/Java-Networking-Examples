@@ -70,9 +70,7 @@ java src.udp.UDPServer
 java src.udp.UDPClient
 ```
 
-## 📝 Usage Examples
 
-```
 
 ## 🔍 Key Differences Between TCP and UDP
 
