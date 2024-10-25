@@ -21,7 +21,7 @@ A simple yet robust implementation of TCP and UDP client-server communication in
 
 ```
 tcp-udp-java/
-├── src/
+├── src.com.networking/
 │   ├── tcp/
 │   │   ├── TCPServer.java
 │   │   └── TCPClient.java
