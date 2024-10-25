@@ -72,29 +72,6 @@ java src.udp.UDPClient
 
 ## 📝 Usage Examples
 
-### TCP Example
-
-```java
-// Start TCP Server
-TCPServer server = new TCPServer();
-server.start(6789);
-
-// Connect with TCP Client
-TCPClient client = new TCPClient();
-client.connect("localhost", 6789);
-client.sendMessage("Hello, Server!");
-```
-
-### UDP Example
-
-```java
-// Start UDP Server
-UDPServer server = new UDPServer();
-server.start(9876);
-
-// Send message with UDP Client
-UDPClient client = new UDPClient();
-client.sendMessage("Hello, Server!", "localhost", 9876);
 ```
 
 ## 🔍 Key Differences Between TCP and UDP
@@ -116,8 +93,8 @@ client.sendMessage("Hello, Server!", "localhost", 9876);
 ## ⚙️ Configuration
 
 Both TCP and UDP implementations use default ports:
-- TCP Server: Port 6789
-- UDP Server: Port 9876
+- TCP Server: Port 2020
+- UDP Server: Port 2021
 
 To change these ports, modify the port numbers in the respective server files.
 
@@ -126,30 +103,18 @@ To change these ports, modify the port numbers in the respective server files.
 1. Basic Connectivity Test:
 ```bash
 # Start server
-java src.tcp.TCPServer
+java src.com.networking.tcp.TCPServer
 
 # In another terminal, run client
-java src.tcp.TCPClient
+java src.com.networking.tcp.TCPClient
 ```
 
 2. Multiple Client Test (TCP):
 ```bash
 # Start multiple client instances
-java src.tcp.TCPClient
-java src.tcp.TCPClient
+java src.com.networking.tcp.TCPClient
+java src.com.networking.tcp.TCPClient
 ```
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 🚧 Known Issues
 
@@ -169,11 +134,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - [ ] Create configuration file support
 
 
-## 🙏 Acknowledgments
-
-- Java Socket Programming Documentation
-- Oracle Java Networking Tutorial
-- Stack Overflow Community
-
----
-Remember to star ⭐ this repository if you found it helpful!
