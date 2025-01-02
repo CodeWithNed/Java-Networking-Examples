@@ -10,24 +10,29 @@ public class TCPServer {
     public TCPServer() throws IOException {
 
         ServerSocket serverSocket = new ServerSocket(2020);
-        System.out.println("Port 2020 is opened.");
+        System.out.println("Port 2020 is open");
 
         Socket socket = serverSocket.accept();
-        InetAddress IPAddress = socket.getInetAddress();
-        System.out.println(IPAddress.getHostAddress());
+        System.out.println("Client " + socket.getInetAddress() + " has connected.");
 
-        BufferedReader in_socket = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-        PrintWriter out_socket = new PrintWriter(new OutputStreamWriter(socket.getOutputStream()),true);
+        // IO Buffer
+        InputStream inputStream = socket.getInputStream();
+        InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+        BufferedReader in_socket = new BufferedReader(inputStreamReader);
 
-        out_socket.println("Welcome!");
-        System.out.println("Client says " + in_socket.readLine());
+        OutputStream outputStream = socket.getOutputStream();
+        OutputStreamWriter outputStreamWriter = new OutputStreamWriter(outputStream);
+        PrintWriter out_socket = new PrintWriter(outputStreamWriter,true);
+
+        out_socket.println("Welcome to TCP Server!");
+        String message = in_socket.readLine();
+        System.out.println("Client says " + message);
 
         socket.close();
-        System.out.println("Port 2020 is closed");
+        System.out.println("Socket is closed!");
     }
 
     public static void main(String[] args) {
-
         try {
             new TCPServer();
         }

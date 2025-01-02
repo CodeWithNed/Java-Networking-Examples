@@ -1,4 +1,4 @@
-package com.networking.tcp;
+package com.networking.tcp_concurrent;
 
 import java.io.*;
 import java.net.Socket;
@@ -7,7 +7,7 @@ public class TCPClient {
 
     TCPClient() throws IOException {
 
-        Socket socket = new Socket("localhost", 2020);
+        Socket socket = new Socket("192.168.137.1", 2020);
         System.out.println("Successfully connected to the server.");
 
         BufferedReader in_socket = new BufferedReader(new InputStreamReader(socket.getInputStream()));
