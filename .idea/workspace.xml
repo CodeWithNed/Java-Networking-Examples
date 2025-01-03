@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4322c64-6a87-4367-902c-fb9308b67de8" name="Changes" comment="TCP Client">
-      <change afterPath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/networking/udp/UDPReciever.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/networking/udp/UDPSender.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/networking/tcp/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/tcp/TCPClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/networking/tcp/TCPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/tcp/TCPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPServerMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPServerMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/networking/tcp_concurrent/TCPServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="DarkyenusTimeTracker">
-    <option name="totalTimeSeconds" value="176" />
+    <option name="totalTimeSeconds" value="4315" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -52,7 +50,7 @@
       <recent name="C:\Users\Nadun kumarasinghe\Documents\GitHub\Java-Networking-Examples\src\com\networking\udp" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TCPClient">
+  <component name="RunManager" selected="Application.com.networking.tcp_concurrent.TCPClient">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Java-Networking-Examples" />
@@ -86,8 +84,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TCPServerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.networking.tcp_concurrent.TCPServerMain" />
+      <module name="Java-Networking-Examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.networking.tcp_concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.networking.tcp_concurrent.TCPClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.networking.tcp_concurrent.TCPClient" />
+      <module name="Java-Networking-Examples" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.networking.tcp_concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.com.networking.tcp_concurrent.TCPClient" />
+        <item itemvalue="Application.TCPServerMain" />
         <item itemvalue="Application.TCPClient" />
         <item itemvalue="Application.TCPServer" />
         <item itemvalue="Application.Main" />
@@ -110,6 +136,7 @@
       <workItem from="1734239226466" duration="996000" />
       <workItem from="1734408453757" duration="752000" />
       <workItem from="1735818061441" duration="432000" />
+      <workItem from="1735860935745" duration="4846000" />
     </task>
     <task id="LOCAL-00001" summary="TCP Server">
       <created>1729841803832</created>
